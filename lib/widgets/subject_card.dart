@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:formula_hub/data/physics_data.dart';
 import '../theme/app_colors.dart';
+import '../screens/chapter_screen.dart';
+import '../models/chapter.dart';
 
 class SubjectCard extends StatelessWidget {
   final String title;
   final String imagepath;
+  final List<Chapter> subjectData;
 
   const SubjectCard({
     super.key, 
     required this.title, 
-    required this.imagepath
+    required this.imagepath,
+    required this.subjectData
   });
 
   @override
@@ -26,13 +31,21 @@ class SubjectCard extends StatelessWidget {
       ),
       margin: EdgeInsetsDirectional.all(20),
       child: Material(
-        borderRadius: BorderRadius.circular(10), 
         color: Colors.transparent,
         child: InkWell(
           splashColor: AppColors.splashColorlor,
-          highlightColor: AppColors.card,
           borderRadius: BorderRadius.circular(10), 
-          onTap: () {},
+          onTap: (
+          ) {
+            Navigator.push(
+            context, 
+            MaterialPageRoute(
+              builder: (context) => 
+              ChapterScreen(
+                subjectName: title,
+                chapters: subjectData,
+              )));
+          },
           child: Container(
             height: 68.0,
             width: 320.0,

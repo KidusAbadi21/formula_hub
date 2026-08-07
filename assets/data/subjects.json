@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Physics",
+        "imagepath": "assets/images/image-removebg-preview (5).png",
+        "chapters": [
+            {
+                "number": 1,
+                "name": "Motion"
+            },
+            {
+                "number": 2,
+                "name": "Force"
+            },
+            {
+                "number": 3,
+                "name": "Energy"
+            }
+        ]
+    },   
+    {
+        "name": "Mathematics",
+        "imagepath": "assets/images/5494710.png",
+        "chapters": [
+            {
+                "number": 1,
+                "name": "Equalities and Inequalities"
+            },
+            {
+                "number": 2,
+                "name": "Polynomial functions"
+            },
+            {
+                "number": 3,
+                "name": "Quadratic Function"
+            }
+        ]
+    },
+    {
+        "name": "Chemistry",
+        "imagepath": "assets/images/201607.png",
+        "chapters": [
+            {
+                "number": 1,
+                "name": "Chemical boding"
+            },
+            {
+                "number": 2,
+                "name": "Organic chemistry"
+            }
+        ]
+    }
+]
