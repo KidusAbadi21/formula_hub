@@ -1,0 +1,37 @@
+{
+    "subject": "maths",
+    "chapters": [
+        {
+            "number": 1,
+            "title": "Relations and Functions"
+        },
+        {
+            "number": 2,
+            "title": "Rational Expression and Rational Functions"
+        },
+        {
+            "number": 3,
+            "title": "Matricesr"
+        },
+        {
+            "number": 4,
+            "title": "Determinants and Their properties"
+        },
+        {
+            "number": 5,
+            "title": "Vectors"
+        },
+        {
+            "number": 6,
+            "title": "Transformations of the Plane"
+        },
+        {
+            "number": 7,
+            "title": "Statistics"
+        },
+        {
+            "number": 8,
+            "title": "Probability"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "subject": "physics",
+    "chapters": [
+        {
+            "number": 1,
+            "title": "Physics and Human Society"
+        },
+        {
+            "number": 2,
+            "title": "Vectors"
+        },
+        {
+            "number": 3,
+            "title": "Motion in One and Two Dimensions"
+        },
+        {
+            "number": 4,
+            "title": "Dynamics"
+        },
+        {
+            "number": 5,
+            "title": "Heat Conduction and Calorimetry"
+        },
+        {
+            "number": 6,
+            "title": "Electrostatics and Electric Circuit"
+        },
+        {
+            "number": 7,
+            "title": "Nuclear Physics"
+        }
+    ]
+}
