@@ -1,9 +1,9 @@
 class Chapter{
   int number;
-  String name;
+  String title;
 
   Chapter({
     required this.number,
-    required this.name
+    required this.title
   });
 }

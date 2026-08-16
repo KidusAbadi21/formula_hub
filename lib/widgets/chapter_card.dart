@@ -58,7 +58,7 @@ class ChapterCard extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 2),
-                    Text(chapter.name, 
+                    Text(chapter.title, 
                       // overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                           color: AppColors.subtitle 
@@ -66,7 +66,6 @@ class ChapterCard extends StatelessWidget {
                       ),
                   ],),
                 ),
-                  
                 Icon(Icons.arrow_forward_ios, size: 18.0,)
               ],       
             ),
