@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:formula_hub/data/physics_data.dart';
 import '../theme/app_colors.dart';
 import '../screens/chapter_screen.dart';
-import '../models/chapter.dart';
+
 
 class SubjectCard extends StatelessWidget {
   final String title;
   final String imagepath;
-  final List<Chapter> subjectData;
+  final String path;
 
   const SubjectCard({
     super.key, 
     required this.title, 
     required this.imagepath,
-    required this.subjectData
+    required this.path
   });
 
   @override
@@ -40,10 +39,9 @@ class SubjectCard extends StatelessWidget {
             Navigator.push(
             context, 
             MaterialPageRoute(
-              builder: (context) => 
-              ChapterScreen(
+              builder: (context) => ChapterScreen(
                 subjectName: title,
-                chapters: subjectData,
+                path: path,
               )));
           },
           child: Container(

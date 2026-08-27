@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
 import '../widgets/subject_card.dart';
-import '../data/physics_data.dart';
-import '../data/maths_data.dart';
-import '../data/chemistry_data.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -48,15 +45,15 @@ class HomeScreen extends StatelessWidget {
           SubjectCard(
             title: "Physics",
             imagepath: "assets/images/image-removebg-preview (5).png",
-            subjectData: physicsChapters),
+            path: "assets/data/physics.json"),
           SubjectCard(
             title: "Mathematics",
             imagepath: "assets/images/5494710.png",
-            subjectData: mathsChapters),
+            path: "assets/data/maths.json"),
           SubjectCard(
             title: "Chemistry",
             imagepath: "assets/images/201607.png",
-            subjectData: chemistryChapters),
+            path: "assets/data/chemistry.json"),
         ],
       ), 
     ),
