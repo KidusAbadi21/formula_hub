@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import "../models/chapter.dart";
 import '../widgets/chapter_card.dart';
 import '../theme/app_colors.dart';
-import '../services/loadjson.dart';
+import '../services/loadjson_chapters.dart';
+import '../screens/formulas_screen.dart';
 
 
 class ChapterScreen extends StatelessWidget{
@@ -14,7 +15,7 @@ class ChapterScreen extends StatelessWidget{
     super.key,
     required this.subjectName,
     required this.path
-    });
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +47,22 @@ class ChapterScreen extends StatelessWidget{
             return ListView.builder(
               itemCount: chapters.length,
               itemBuilder: (context, index) {
-                return ChapterCard(chapter: chapters[index]);
+                return ChapterCard(
+                  chapter: chapters[index],
+                  onTap: () {
+                    Navigator.push(
+                      context, 
+                      MaterialPageRoute(builder: (context) => FormulaScreen(
+                        subjectName: subjectName,
+                        chapterNumber: chapters[index].number,
+                        chapterName: chapters[index].title,
+                        path: path,
+                        chapterIndex: index
+                      )
+                    )
+                    );
+                  },
+                );
               },
             );
           } 

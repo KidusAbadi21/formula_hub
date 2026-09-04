@@ -3,35 +3,147 @@
     "chapters": [
         {
             "number": 1,
-            "title": "Relations and Functions"
+            "title": "Relations and Functions",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 2,
-            "title": "Rational Expression and Rational Functions"
+            "title": "Rational Expression and Rational Functions",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 3,
-            "title": "Matricesr"
+            "title": "Matricesr",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 4,
-            "title": "Determinants and Their properties"
+            "title": "Determinants and Their properties",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 5,
-            "title": "Vectors"
+            "title": "Vectors",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 6,
-            "title": "Transformations of the Plane"
+            "title": "Transformations of the Plane",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 7,
-            "title": "Statistics"
+            "title": "Statistics",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 8,
-            "title": "Probability"
+            "title": "Probability",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         }
     ]
 }

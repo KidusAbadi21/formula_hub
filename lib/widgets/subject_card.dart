@@ -41,7 +41,7 @@ class SubjectCard extends StatelessWidget {
             MaterialPageRoute(
               builder: (context) => ChapterScreen(
                 subjectName: title,
-                path: path,
+                path: path
               )));
           },
           child: Container(

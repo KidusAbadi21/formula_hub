@@ -3,27 +3,111 @@
     "chapters": [
         {
             "number": 1,
-            "title": "Atomic Structure and Periodic Properties of the Elements"
+            "title": "Atomic Structure and Periodic Properties of the Elements",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 2,
-            "title": "Organic chemistry"
+            "title": "Organic chemistry",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 3,
-            "title": "Physical State Of Matter"
+            "title": "Physical State Of Matter",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 4,
-            "title": "Chemical Kinetics"
+            "title": "Chemical Kinetics",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 5,
-            "title": "Chemical Equilibrium"
+            "title": "Chemical Equilibrium",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 6,
-            "title": "Some Important Oxygen-containing Organic Compounds"
+            "title": "Some Important Oxygen-containing Organic Compounds",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         }
     ]
 }

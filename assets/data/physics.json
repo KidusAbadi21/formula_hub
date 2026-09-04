@@ -3,31 +3,129 @@
     "chapters": [
         {
             "number": 1,
-            "title": "Physics and Human Society"
+            "title": "Physics and Human Society",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 2,
-            "title": "Vectors"
+            "title": "Vectors",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 3,
-            "title": "Motion in One and Two Dimensions"
+            "title": "Motion in One and Two Dimensions",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 4,
-            "title": "Dynamics"
+            "title": "Dynamics",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 5,
-            "title": "Heat Conduction and Calorimetry"
+            "title": "Heat Conduction and Calorimetry",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 6,
-            "title": "Electrostatics and Electric Circuit"
+            "title": "Electrostatics and Electric Circuit",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         },
         {
             "number": 7,
-            "title": "Nuclear Physics"
+            "title": "Nuclear Physics",
+            "formulas": [
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                },
+                {
+                    "name": "formula 1",
+                    "expression": "b = a^2c"
+                }
+            ]
         }
     ]
 }

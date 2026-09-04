@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:formula_hub/models/formula.dart';
 import '../theme/app_colors.dart';
-import '../models/chapter.dart';
+import '../models/formula.dart';
+import 'package:flutter_math_fork/flutter_math.dart';
 
-class ChapterCard extends StatelessWidget {
-  final Chapter chapter;
-  final VoidCallback onTap;
+class FormulaCard extends StatelessWidget {
+  final Formula formula;
 
-
-  const ChapterCard({
+  const FormulaCard({
     super.key, 
-    required this.chapter,
-    required this.onTap
+    required this.formula
   });
 
   @override
@@ -33,7 +32,11 @@ class ChapterCard extends StatelessWidget {
         child: InkWell(
           splashColor: AppColors.splashColorlor,
           borderRadius: BorderRadius.circular(10), 
-          onTap: onTap,
+          onTap: () {
+          //   Navigator.push(
+          //   context, 
+          //   MaterialPageRoute(builder: (context) => ));
+          },
           child: Container(
             constraints: BoxConstraints(
               minHeight: 68.0,
@@ -50,16 +53,16 @@ class ChapterCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Chapter ${chapter.number}",
+                      formula.name,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 14.5,
                       ),
                     ),
                     SizedBox(height: 2),
-                    Text(chapter.title, 
+                    Math.tex(formula.expression, 
                       // overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        textStyle: TextStyle(
                           color: AppColors.subtitle 
                         )
                       ),
