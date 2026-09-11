@@ -46,7 +46,7 @@ class SubjectCard extends StatelessWidget {
           },
           child: Container(
             height: 68.0,
-            width: 320.0,
+            // width: 320.0,
             padding: EdgeInsets.fromLTRB(16, 12, 18, 13),
             alignment: Alignment.centerLeft,
             child: Row(
