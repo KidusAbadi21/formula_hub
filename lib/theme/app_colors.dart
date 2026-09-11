@@ -12,5 +12,6 @@ class AppColors {
   static const subtitle = Color(0xFF616161);
   static const shadow = Colors.black12;
   static const splashColorlor = Color.fromARGB(10, 0, 0, 0) ;
+  static const formulaDetail = Color.fromARGB(255, 186, 215, 248);
 }
 

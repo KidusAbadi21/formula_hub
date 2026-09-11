@@ -6,10 +6,14 @@ import 'package:flutter_math_fork/flutter_math.dart';
 
 class FormulaCard extends StatelessWidget {
   final Formula formula;
+  final int sequence;
+  final VoidCallback onTap;
 
   const FormulaCard({
     super.key, 
-    required this.formula
+    required this.formula,
+    required this.sequence,
+    required this.onTap
   });
 
   @override
@@ -32,11 +36,7 @@ class FormulaCard extends StatelessWidget {
         child: InkWell(
           splashColor: AppColors.splashColorlor,
           borderRadius: BorderRadius.circular(10), 
-          onTap: () {
-          //   Navigator.push(
-          //   context, 
-          //   MaterialPageRoute(builder: (context) => ));
-          },
+          onTap: onTap,
           child: Container(
             constraints: BoxConstraints(
               minHeight: 68.0,
@@ -53,7 +53,7 @@ class FormulaCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      formula.name,
+                      "${sequence}. ${formula.name}",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 14.5,

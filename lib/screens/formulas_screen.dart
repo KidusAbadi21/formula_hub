@@ -4,6 +4,7 @@ import "../models/formula.dart";
 import '../widgets/formula_card.dart';
 import '../theme/app_colors.dart';
 import '../services/loadjson_formulas.dart';
+import 'formula_detail_screen.dart';
 
 
 class FormulaScreen extends StatelessWidget{
@@ -66,12 +67,23 @@ class FormulaScreen extends StatelessWidget{
             return ListView.builder(
               itemCount: formulas.length,
               itemBuilder: (context, index) {
-                return FormulaCard(formula: formulas[index]);
+                return FormulaCard(
+                  formula: formulas[index],
+                  sequence: index + 1,
+                  onTap: () {
+                    Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) => FormulaDetailScreen(formula: formulas[index])
+                      )
+                    );
+                  },
+                );
               },
             );
           } 
           return Center(
-            child: Text("No formulas found"),
+            child: Text("This chapter has no formulas yet."),
           );
         }
       )

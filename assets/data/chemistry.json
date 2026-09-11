@@ -6,16 +6,359 @@
             "title": "Atomic Structure and Periodic Properties of the Elements",
             "formulas": [
                 {
-                    "name": "formula 1",
-                    "expression": "b = a^2c"
+                    "name": "Average relative atomic mass",
+                    "expression": "A = A_1 f_1 + A_2 f_2 + ... + A_n f_n",
+                    "Variables": {
+                        "A": "Average relative atomic mass of the element",
+                        "A_1, A_2, ..., A_n": "Relative masses of the isotopes 1 through n",
+                        "f_1, f_2, ..., f_n": "Fractional abundances of the isotopes 1 through n"
+                    },
+                    "siunit": "amu"
                 },
                 {
-                    "name": "formula 1",
-                    "expression": "b = a^2c"
+                    "name": "Speed of an electromagnetic wave",
+                    "expression": "c = \\nu \\lambda",
+                    "Variables": {
+                        "c": "Speed of electromagnetic waves, including light (approximately 3.0 \\times 10^8 m/s)",
+                        "\\nu": "Frequency of the wave",
+                        "\\lambda": "Wavelength of the wave"
+                    },
+                    "siunit": "m/s"
                 },
                 {
-                    "name": "formula 1",
-                    "expression": "b = a^2c"
+                    "name": "Planck's energy equation",
+                    "expression": "E = h\\nu = \\frac{hc}{\\lambda}",
+                    "Variables": {
+                        "E": "Energy of a quantum or photon",
+                        "h": "Planck's constant, h = 6.63 \\times 10^{-34} J\\cdot s",
+                        "\\nu": "Frequency of radiation",
+                        "c": "Speed of electromagnetic waves, including light (approximately 3.0 \\times 10^8 m/s)",
+                        "\\lambda": "Wavelength of radiation"
+                    },
+                    "siunit": "J"
+                },
+                {
+                    "name": "Minimum energy to remove an electron (Threshold energy)",
+                    "expression": "E_o = h\\nu_o",
+                    "Variables": {
+                        "E_o": "Minimum energy (work function) required to remove an electron",
+                        "h": "Planck's constant, h = 6.63 \\times 10^{-34} J\\cdot s",
+                        "\\nu_o": "Threshold frequency"
+                    },
+                    "siunit": "J"
+                },
+                {
+                    "name": "Kinetic energy of an ejected photoelectron",
+                    "expression": "KE_e = \\frac{1}{2}mv^2 = h\\nu - h\\nu_o",
+                    "Variables": {
+                        "KE_e": "Kinetic energy of an electron",
+                        "m": "Mass of an electron",
+                        "v": "Velocity of an electron",
+                        "h": "Planck's constant",
+                        "\\nu": "Frequency of incident photon",
+                        "\\nu_o": "Threshold frequency"
+                    },
+                    "siunit": "J",
+                    "specialcases": [
+                        "Light frequency must be greater than the threshold frequency (\\nu > \\nu_o) for photoelectrons to have kinetic energy."
+                    ]
+                },
+                {
+                    "name": "Einstein mass-energy equivalence",
+                    "expression": "E = mc^2",
+                    "Variables": {
+                        "E": "Energy",
+                        "m": "Mass",
+                        "c": "Speed of light"
+                    },
+                    "siunit": "J"
+                },
+                {
+                    "name": "Apparent mass of a photon",
+                    "expression": "m = \\frac{E}{c^2} = \\frac{\\frac{hc}{\\lambda}}{c^2} = \\frac{h}{c\\lambda}",
+                    "Variables": {
+                        "m": "Apparent mass of a photon",
+                        "E": "Energy of the photon",
+                        "c": "Speed of light",
+                        "h": "Planck's constant",
+                        "\\lambda": "Wavelength"
+                    },
+                    "siunit": "kg"
+                },
+                {
+                    "name": "Energy change between discrete energy levels",
+                    "expression": "\\Delta E = h\\nu = \\frac{hc}{\\lambda}",
+                    "Variables": {
+                        "\\Delta E": "Energy change between levels",
+                        "h": "Planck's constant",
+                        "\\nu": "Frequency of emitted or absorbed photon",
+                        "c": "Speed of light",
+                        "\\lambda": "Wavelength of emitted or absorbed photon"
+                    },
+                    "siunit": "J"
+                },
+                {
+                    "name": "Total energy of an electron in an orbit",
+                    "expression": "E = \\frac{1}{2}mv^2 + \\frac{e^2}{r}",
+                    "Variables": {
+                        "E": "Total energy of the electron",
+                        "m": "Mass of the electron",
+                        "v": "Velocity of the electron",
+                        "e": "Charge of the electron",
+                        "r": "Radius of the orbit"
+                    },
+                    "siunit": "J"
+                },
+                {
+                    "name": "Force balance condition for stable orbit",
+                    "expression": "\\frac{e^2}{r^2} = \\frac{mv^2}{r}",
+                    "Variables": {
+                        "e": "Charge of the electron",
+                        "r": "Radius of the orbit",
+                        "m": "Mass of the electron",
+                        "v": "Velocity of the electron"
+                    },
+                    "siunit": "N",
+                    "specialcases": [
+                        "Equalizes the centripetal force attracting the electron to the nucleus and the centrifugal force pulling it away."
+                    ]
+                },
+                {
+                    "name": "Bohr's quantum condition for angular momentum",
+                    "expression": "mvr = \\frac{nh}{2\\pi}",
+                    "Variables": {
+                        "m": "Mass of the electron",
+                        "v": "Velocity of the electron",
+                        "r": "Radius of the orbit",
+                        "n": "Principal quantum number (positive integer: 1, 2, 3, ...)",
+                        "h": "Planck's constant"
+                    },
+                    "siunit": "kg*m^2/s"
+                },
+                {
+                    "name": "Bohr electron velocity",
+                    "expression": "v = \\frac{nh}{2\\pi mr}",
+                    "Variables": {
+                        "v": "Velocity of the electron",
+                        "n": "Principal quantum number",
+                        "h": "Planck's constant",
+                        "m": "Mass of the electron",
+                        "r": "Radius of the orbit"
+                    },
+                    "siunit": "m/s"
+                },
+                {
+                    "name": "Bohr radius equation",
+                    "expression": "r = \\frac{n^2 h^2}{4\\pi m e^2} = n^2 \\left(\\frac{h^2}{4\\pi m e^2}\\right) = n^2 a_o = (0.53\\text{ \\AA})n^2",
+                    "Variables": {
+                        "r": "Radius of the permitted orbit",
+                        "n": "Principal quantum number",
+                        "h": "Planck's constant",
+                        "m": "Mass of the electron",
+                        "e": "Charge of the electron",
+                        "a_o": "First Bohr radius (0.53 Å)"
+                    },
+                    "siunit": "m"
+                },
+                {
+                    "name": "Bohr energy of electron in hydrogen atom",
+                    "expression": "E_n = -\\frac{R_H}{n^2} = -\\frac{2.18 \\times 10^{-18} \\text{ J}}{n^2}",
+                    "Variables": {
+                        "E_n": "Energy of the electron in energy level n",
+                        "R_H": "Rydberg constant for the hydrogen atom (2.18 x 10^-18 J)",
+                        "n": "Principal quantum number"
+                    },
+                    "siunit": "J",
+                    "specialcases": [
+                        "Applies to hydrogen and single-electron species (e.g., He+, Li2+)."
+                    ]
+                },
+                {
+                    "name": "Bohr energy change for electron transition",
+                    "expression": "\\Delta E = E_f - E_i = -R_H \\left(\\frac{1}{n_f^2} - \\frac{1}{n_i^2}\\right) = -2.18 \\times 10^{-18} \\text{ J} \\left(\\frac{1}{n_f^2} - \\frac{1}{n_i^2}\\right)",
+                    "Variables": {
+                        "\\Delta E": "Energy change during transition",
+                        "E_f": "Energy of the final state",
+                        "E_i": "Energy of the initial state",
+                        "R_H": "Rydberg constant (2.18 x 10^-18 J)",
+                        "n_f": "Final principal quantum number",
+                        "n_i": "Initial principal quantum number"
+                    },
+                    "siunit": "J",
+                    "specialcases": [
+                        "\\Delta E > 0 indicates energy absorption (n_f > n_i).",
+                        "\\Delta E < 0 indicates energy emission (n_i > n_f)."
+                    ]
+                },
+                {
+                    "name": "De Broglie wavelength",
+                    "expression": "\\lambda = \\frac{h}{mv}",
+                    "Variables": {
+                        "\\lambda": "De Broglie wavelength",
+                        "h": "Planck's constant",
+                        "m": "Mass of the particle",
+                        "v": "Speed of the particle"
+                    },
+                    "siunit": "m"
+                },
+                {
+                    "name": "Heisenberg's Uncertainty Principle",
+                    "expression": "(\\Delta x)(\\Delta p) \\ge \\frac{h}{4\\pi}",
+                    "Variables": {
+                        "\\Delta x": "Uncertainty in position",
+                        "\\Delta p": "Uncertainty in momentum",
+                        "h": "Planck's constant"
+                    },
+                    "siunit": "J \\cdot s"
+                },
+                {
+                    "name": "Heisenberg's Uncertainty Principle (in terms of mass and velocity)",
+                    "expression": "(\\Delta x)(m\\Delta v) \\ge \\frac{h}{4\\pi}",
+                    "Variables": {
+                        "\\Delta x": "Uncertainty in position",
+                        "m": "Mass of the particle",
+                        "\\Delta v": "Uncertainty in velocity",
+                        "h": "Planck's constant"
+                    },
+                    "siunit": "J \\cdot s"
+                },
+                {
+                    "name": "Total number of orbitals in a shell",
+                    "expression": "Total\\ orbitals = n^2",
+                    "Variables": {
+                        "n": "Principal quantum number"
+                    },
+                    "siunit": "Dimensionless"
+                },
+                {
+                    "name": "Number of orbitals in a subshell",
+                    "expression": "Number\\ of\\ orbitals = 2l + 1",
+                    "Variables": {
+                        "l": "Angular momentum (azimuthal) quantum number"
+                    },
+                    "siunit": "Dimensionless"
+                },
+                {
+                    "name": "Electron capacity of a subshell",
+                    "expression": "Electron\\ capacity = 4l + 2",
+                    "Variables": {
+                        "l": "Angular momentum (azimuthal) quantum number"
+                    },
+                    "siunit": "Dimensionless"
+                },
+                {
+                    "name": "Electron capacity of a shell",
+                    "expression": "Electron\\ capacity = 2n^2",
+                    "Variables": {
+                        "n": "Principal quantum number"
+                    },
+                    "siunit": "Dimensionless"
+                },
+                {
+                    "name": "Atomic radius",
+                    "expression": "r = \\frac{d}{2}",
+                    "Variables": {
+                        "r": "Atomic radius",
+                        "d": "Distance between the nuclei of two adjacent bonded atoms"
+                    },
+                    "siunit": "m"
+                },
+                {
+                    "name": "First ionization energy",
+                    "expression": "\\text{Atom}(g) \\rightarrow \\text{Ion}^{+}(g) + e^{-} \\qquad \\Delta E = IE_1 > 0",
+                    "Variables": {
+                        "IE_1": "First ionization energy",
+                        "\\Delta E": "Energy change for removal of the first electron",
+                        "e^{-}": "Electron removed from the gaseous atom"
+                    },
+                    "siunit": "kJ mol^{-1}",
+                    "specialcases": [
+                        "The atom must be in the gaseous state.",
+                        "The process removes the first electron from a neutral atom.",
+                        "The ion produced is a gaseous positive ion.",
+                        "\\Delta E = IE_1 > 0 because energy must be supplied to remove the electron."
+                    ]
+                },
+                {
+                    "name": "Second ionization energy",
+                    "expression": "\\text{Ion}^{+}(g) \\rightarrow \\text{Ion}^{2+}(g) + e^{-} \\qquad \\Delta E = IE_2",
+                    "Variables": {
+                        "IE_2": "Second ionization energy",
+                        "\\Delta E": "Energy change for removal of the second electron",
+                        "e^{-}": "Second electron removed"
+                    },
+                    "siunit": "kJ mol^{-1}",
+                    "specialcases": [
+                        "The starting species must already be a gaseous +1 ion.",
+                        "The second electron is removed from the ion.",
+                        "IE_2 is always greater than IE_1 because the electron is removed from a positively charged ion.",
+                        "The same sequential process continues for IE_3, IE_4, and so on in multi-electron atoms."
+                    ]
+                },
+                {
+                    "name": "Sequential ionization energy",
+                    "expression": "\\text{X}^{(n-1)+}(g) \\rightarrow \\text{X}^{n+}(g) + e^{-} \\qquad \\Delta E = IE_n",
+                    "Variables": {
+                        "IE_n": "nth ionization energy",
+                        "n": "Number identifying which electron is being removed",
+                        "\\text{X}^{(n-1)+}": "Gaseous ion before removal of the nth electron",
+                        "\\text{X}^{n+}": "Gaseous ion after removal of the nth electron",
+                        "e^{-}": "Electron removed"
+                    },
+                    "siunit": "kJ mol^{-1}",
+                    "specialcases": [
+                        "This applies to multi-electron atoms that can lose more than one electron.",
+                        "The ionization energies are numbered sequentially from the ground-state atom.",
+                        "Each successive ionization removes an electron from an increasingly positively charged ion.",
+                        "IE_1 < IE_2 < IE_3 < IE_4..."
+                    ]
+                },
+                {
+                    "name": "First electron affinity",
+                    "expression": "\\text{Atom}(g) + e^{-} \\rightarrow \\text{Ion}^{-}(g) \\qquad \\Delta E = EA_1",
+                    "Variables": {
+                        "EA_1": "First electron affinity",
+                        "\\Delta E": "Energy change when the first electron is added",
+                        "e^{-}": "Electron added to the neutral gaseous atom"
+                    },
+                    "siunit": "kJ mol^{-1}",
+                    "specialcases": [
+                        "The atom must be neutral and in the gaseous state.",
+                        "The process adds the first electron to the atom.",
+                        "EA_1 is usually negative because the atom releases energy when it gains an electron."
+                    ]
+                },
+                {
+                    "name": "Second electron affinity",
+                    "expression": "\\text{Ion}^{-}(g) + e^{-} \\rightarrow \\text{Ion}^{2-}(g) \\qquad \\Delta E = EA_2",
+                    "Variables": {
+                        "EA_2": "Second electron affinity",
+                        "\\Delta E": "Energy change when the second electron is added",
+                        "e^{-}": "Second electron added"
+                    },
+                    "siunit": "kJ mol^{-1}",
+                    "specialcases": [
+                        "The starting species must already be a gaseous negative ion.",
+                        "EA_2 is always positive because energy must be absorbed to overcome electrostatic repulsion when adding another electron to a negative ion."
+                    ]
+                },
+                {
+                    "name": "Sequential electron affinity",
+                    "expression": "\\text{X}^{(n-1)-}(g) + e^{-} \\rightarrow \\text{X}^{n-}(g) \\qquad \\Delta E = EA_n",
+                    "Variables": {
+                        "EA_n": "nth electron affinity",
+                        "n": "Number identifying which electron is being added",
+                        "\\text{X}^{(n-1)-}": "Gaseous negative ion before electron addition",
+                        "\\text{X}^{n-}": "Gaseous negative ion after electron addition",
+                        "e^{-}": "Electron added"
+                    },
+                    "siunit": "kJ mol^{-1}",
+                    "specialcases": [
+                        "This represents successive addition of electrons to an atom or ion.",
+                        "For the second and subsequent electron additions, the incoming electron is added to an already negatively charged species.",
+                        "EA₁ is usually negative",
+                        "EA₂, EA₃, EA₄, ... is usually positive"
+                    ]
                 }
             ]
         },
@@ -24,16 +367,65 @@
             "title": "Organic chemistry",
             "formulas": [
                 {
-                    "name": "formula 1",
-                    "expression": "b = a^2c"
+                    "name": "Hess's Law of Heat Summation",
+                    "expression": "\\Delta H_{\\text{total}} = \\Delta H_{1} + \\Delta H_{2} + \\Delta H_{3} + \\dots",
+                    "Variables": {
+                        "\\Delta H_{\\text{total}}": "Overall reaction enthalpy change",
+                        "\\Delta H_{1}, \\Delta H_{2}, \\Delta H_{3}": "Enthalpy changes for individual constituent reactions"
+                    },
+                    "siunit": "kJ or kJ/mol"
                 },
                 {
-                    "name": "formula 1",
-                    "expression": "b = a^2c"
+                    "name": "Born-Haber Cycle Lattice Energy Calculation for NaCl",
+                    "expression": "U_{\\text{NaCl}} = \\Delta_{f}H^{\\circ} - (\\Delta H^{\\circ}_{\\text{step1}} + \\Delta H^{\\circ}_{\\text{step2}} + \\Delta H^{\\circ}_{\\text{step3}} + \\Delta H^{\\circ}_{\\text{step4}})",
+                    "Variables": {
+                        "U_{\\text{NaCl}}": "Lattice energy of sodium chloride",
+                        "\\Delta_{f}H^{\\circ}": "Standard enthalpy of formation of solid sodium chloride",
+                        "\\Delta H^{\\circ}_{\\text{step1}}": "Enthalpy of sublimation/vaporization of metallic sodium",
+                        "\\Delta H^{\\circ}_{\\text{step2}}": "Enthalpy of dissociation of chlorine gas (half bond energy of Cl2)",
+                        "\\Delta H^{\\circ}_{\\text{step3}}": "First ionization energy of sodium gas",
+                        "\\Delta H^{\\circ}_{\\text{step4}}": "Electron affinity of chlorine gas"
+                    },
+                    "siunit": "kJ/mol"
                 },
                 {
-                    "name": "formula 1",
-                    "expression": "b = a^2c"
+                    "name": "Coulombic Proportionality of Lattice Energy",
+                    "expression": "U \\propto \\frac{q_{1} \\times q_{2}}{r}",
+                    "Variables": {
+                        "U": "Lattice energy",
+                        "q_{1}": "Charge on positive ion (cation)",
+                        "q_{2}": "Charge on negative ion (anion)",
+                        "r": "Distance between the charges"
+                    },
+                    "siunit": "Proportional relationship (Lattice energy measured in kJ/mol)"
+                },
+                {
+                    "name": "Dipole moment",
+                    "expression": "\\mu = \\delta d",
+                    "Variables": {
+                        "\\mu": "Dipole moment",
+                        "\\delta": "Magnitude of the charge at either end of the dipole",
+                        "d": "Distance separating the charges"
+                    },
+                    "siunit": "C·m"
+                },
+                {
+                    "name": "Debye to coulomb-metre conversion",
+                    "expression": "1\\text{ D} = 3.33564 \\times 10^{-30}\\text{ C}\\cdot\\text{m}",
+                    "Variables": {
+                        "D": "Debye (non-SI unit of dipole moment)",
+                        "C\\cdot m": "Coulomb-metre (SI unit of dipole moment)"
+                    },
+                    "siunit": "C·m"
+                },
+                {
+                    "name": "Bond order",
+                    "expression": "\\text{Bond order} = \\frac{\\text{Number of e}^- \\text{ in bonding MOs} - \\text{Number of e}^- \\text{ in anti-bonding MOs}}{2}",
+                    "Variables": {
+                        "\\text{Number of e}^- \\text{ in bonding MOs}": "Number of electrons in bonding molecular orbitals",
+                        "\\text{Number of e}^- \\text{ in anti-bonding MOs}": "Number of electrons in anti-bonding molecular orbitals"
+                    },
+                    "siunit": "dimensionless"
                 }
             ]
         },
@@ -42,16 +434,308 @@
             "title": "Physical State Of Matter",
             "formulas": [
                 {
-                    "name": "formula 1",
-                    "expression": "b = a^2c"
+                    "name": "Kinetic Energy",
+                    "expression": "KE = \\frac{1}{2}mv^2",
+                    "Variables": {
+                        "KE": "Kinetic energy",
+                        "m": "Mass",
+                        "v": "Velocity of gas molecules"
+                    },
+                    "siunit": "J"
                 },
                 {
-                    "name": "formula 1",
-                    "expression": "b = a^2c"
+                    "name": "Pressure",
+                    "expression": "P = \\frac{Force}{Area}",
+                    "Variables": {
+                        "P": "Pressure",
+                        "Force": "Force applied",
+                        "Area": "Area over which force is applied"
+                    },
+                    "siunit": "Pa"
                 },
                 {
-                    "name": "formula 1",
-                    "expression": "b = a^2c"
+                    "name": "Celsius to Kelvin Temperature Conversion",
+                    "expression": "K = {^\\circ}C + 273",
+                    "Variables": {
+                        "K": "Temperature in Kelvin",
+                        "{^\\circ}C": "Temperature in degrees Celsius"
+                    },
+                    "siunit": "K"
+                },
+                {
+                    "name": "Fahrenheit to Celsius Temperature Conversion",
+                    "expression": "{^\\circ}C = ({^\\circ}F - 32) \\times \\frac{5}{9}",
+                    "Variables": {
+                        "{^\\circ}C": "Temperature in degrees Celsius",
+                        "{^\\circ}F": "Temperature in degrees Fahrenheit"
+                    },
+                    "siunit": "°C"
+                },
+                {
+                    "name": "Celsius to Fahrenheit Temperature Conversion",
+                    "expression": "{^\\circ}F = ({^\\circ}C \\times \\frac{9}{5}) + 32",
+                    "Variables": {
+                        "{^\\circ}F": "Temperature in degrees Fahrenheit",
+                        "{^\\circ}C": "Temperature in degrees Celsius"
+                    },
+                    "siunit": "°F"
+                },
+                {
+                    "name": "Boyle's Law",
+                    "expression": "V \\propto \\frac{1}{P}, V = k\\left(\\frac{1}{P}\\right)",
+                    "Variables": {
+                        "V": "Volume of the gas",
+                        "P": "Pressure of the gas",
+                        "k": "Constant at a specific temperature for a given sample of gas"
+                    },
+                    "siunit": "m^3",
+                    "specialcases": [
+                        "Fixed mass of gas at constant temperature"
+                    ]
+                },
+                {
+                    "name": "Boyle's Law (Two Conditions)",
+                    "expression": "P_1V_1 = k = P_2V_2",
+                    "Variables": {
+                        "P_1": "Initial pressure",
+                        "V_1": "Initial volume",
+                        "P_2": "Final pressure",
+                        "V_2": "Final volume",
+                        "k": "Constant"
+                    },
+                    "siunit": "Pa\\cdot m^3",
+                    "specialcases": [
+                        "Fixed mass of gas at constant temperature"
+                    ]
+                },
+                {
+                    "name": "Charles' Law",
+                    "expression": "V \\propto T, k = \\frac{V}{T}",
+                    "Variables": {
+                        "V": "Volume of the gas",
+                        "T": "Kelvin temperature of the gas",
+                        "k": "Constant depending only on quantity of gas and pressure"
+                    },
+                    "siunit": "m^3/K",
+                    "specialcases": [
+                        "Fixed mass of gas at constant pressure"
+                    ]
+                },
+                {
+                    "name": "Charles' Law (Two Conditions)",
+                    "expression": "\\frac{V_1}{T_1} = \\frac{V_2}{T_2}",
+                    "Variables": {
+                        "V_1": "Initial volume",
+                        "T_1": "Initial temperature in Kelvin",
+                        "V_2": "Final volume",
+                        "T_2": "Final temperature in Kelvin"
+                    },
+                    "siunit": "m^3",
+                    "specialcases": [
+                        "Fixed mass of gas at constant pressure"
+                    ]
+                },
+                {
+                    "name": "Gay-Lussac's Law",
+                    "expression": "k = \\frac{P}{T}",
+                    "Variables": {
+                        "k": "Proportionality constant",
+                        "P": "Pressure",
+                        "T": "Absolute temperature"
+                    },
+                    "siunit": "Pa/K",
+                    "specialcases": [
+                        "Applies at constant volume for a fixed amount of gas"
+                    ]
+                },
+                {
+                    "name": "Gay-Lussac's Law (Two-state form)",
+                    "expression": "\\frac{P_{1}}{T_{1}} = \\frac{P_{2}}{T_{2}}",
+                    "Variables": {
+                        "P_1": "Initial pressure",
+                        "T_1": "Initial temperature",
+                        "P_2": "Final pressure",
+                        "T_2": "Final temperature"
+                    },
+                    "siunit": "Dimensionless (Ratio)",
+                    "specialcases": [
+                        "Applies at constant volume for a fixed amount of gas"
+                    ]
+                },
+                {
+                    "name": "The Combined Gas Law",
+                    "expression": "\\frac{PV}{T} = k",
+                    "Variables": {
+                        "P": "Pressure",
+                        "V": "Volume",
+                        "T": "Absolute temperature",
+                        "k": "Proportionality constant"
+                    },
+                    "siunit": "J/K",
+                    "specialcases": [
+                        "Applies to a fixed amount of gas"
+                    ]
+                },
+                {
+                    "name": "The Combined Gas Law (Two-state form)",
+                    "expression": "\\frac{P_{1}V_{1}}{T_{1}} = \\frac{P_{2}V_{2}}{T_{2}}",
+                    "Variables": {
+                        "P_1": "Initial pressure",
+                        "V_1": "Initial volume",
+                        "T_1": "Initial temperature",
+                        "P_2": "Final pressure",
+                        "V_2": "Final volume",
+                        "T_2": "Final temperature"
+                    },
+                    "siunit": "Dimensionless (Ratio)",
+                    "specialcases": [
+                        "Applies to a fixed amount of gas undergoing simultaneous changes in pressure, volume, and temperature"
+                    ]
+                },
+                {
+                    "name": "Avogadro's Law",
+                    "expression": "V = kn",
+                    "Variables": {
+                        "V": "Volume of the gas",
+                        "n": "Number of moles of gas particles",
+                        "k": "Proportionality constant"
+                    },
+                    "siunit": "m^3/mol",
+                    "specialcases": [
+                        "Applies at constant temperature and pressure"
+                    ]
+                },
+                {
+                    "name": "Avogadro's Law (Two-state form)",
+                    "expression": "\\frac{V_{1}}{n_{1}} = \\frac{V_{2}}{n_{2}}",
+                    "Variables": {
+                        "V_1": "Initial volume",
+                        "n_1": "Initial number of moles",
+                        "V_2": "Final volume",
+                        "n_2": "Final number of moles"
+                    },
+                    "siunit": "Dimensionless (Ratio)",
+                    "specialcases": [
+                        "Applies to gas samples compared at the same temperature and pressure"
+                    ]
+                },
+                {
+                    "name": "Proportionality of Ideal Gas Variables",
+                    "expression": "V \\propto n\\frac{T}{P}",
+                    "Variables": {
+                        "V": "Volume of gas",
+                        "n": "Number of moles of gas",
+                        "T": "Absolute temperature",
+                        "P": "Pressure"
+                    },
+                    "siunit": "m^3"
+                },
+                {
+                    "name": "Ideal Gas Equation",
+                    "expression": "V = Rn\\frac{T}{P} = \\frac{nRT}{P}",
+                    "Variables": {
+                        "V": "Volume",
+                        "R": "Universal gas constant, R = 0.082 atm·L/(mol·K)",
+                        "n": "Number of moles",
+                        "T": "Absolute temperature",
+                        "P": "Pressure"
+                    },
+                    "siunit": "m^3",
+                    "specialcases": [
+                        "At STP: n = 1 mol, V = 22.4 L, T = 273 K (0 °C), and P = 1 atm"
+                    ]
+                },
+                {
+                    "name": "Ideal Gas Equation in Rearranged Forms",
+                    "expression": "VP = nRT = R\\frac{mT}{M}",
+                    "Variables": {
+                        "V": "Volume",
+                        "P": "Pressure",
+                        "n": "Number of moles",
+                        "R": "Universal gas constant, R = 0.082 atm·L/(mol·K)",
+                        "T": "Absolute temperature",
+                        "m": "Given mass of the substance",
+                        "M": "Molar mass of the substance"
+                    },
+                    "siunit": "J"
+                },
+                {
+                    "name": "Pressure from Mass and Molar Mass",
+                    "expression": "P = Rn\\frac{T}{V} = R\\frac{mT}{MV}",
+                    "Variables": {
+                        "P": "Pressure",
+                        "R": "Universal gas constant, R = 0.082 atm·L/(mol·K)",
+                        "n": "Number of moles",
+                        "T": "Absolute temperature",
+                        "V": "Volume",
+                        "m": "Given mass",
+                        "M": "Molar mass"
+                    },
+                    "siunit": "Pa"
+                },
+                {
+                    "name": "Molar Mass from Ideal Gas Law",
+                    "expression": "M = R\\frac{mT}{VP}",
+                    "Variables": {
+                        "M": "Molar mass of the gas",
+                        "R": "Universal gas constant, R = 0.082 atm·L/(mol·K)",
+                        "m": "Given mass",
+                        "T": "Absolute temperature",
+                        "V": "Volume",
+                        "P": "Pressure"
+                    },
+                    "siunit": "kg/mol"
+                },
+                {
+                    "name": "Graham's Law of Diffusion",
+                    "expression": "r \\propto \\sqrt{\\frac{1}{d}}, r = \\sqrt{\\frac{1}{M}}",
+                    "Variables": {
+                        "r": "Rate of diffusion of a gas",
+                        "d": "Density of the gas",
+                        "M": "Molar mass (or molecular mass) of the gas"
+                    },
+                    "siunit": "mol/s",
+                    "specialcases": [
+                        "Valid at constant temperature and pressure"
+                    ]
+                },
+                {
+                    "name": "Graham's Law of Diffusion for Two Gases",
+                    "expression": "\\frac{r_1}{r_2} = \\sqrt{\\frac{d_2}{d_1}} = \\sqrt{\\frac{M_2}{M_1}}",
+                    "Variables": {
+                        "r_1": "Rate of diffusion of gas 1",
+                        "r_2": "Rate of diffusion of gas 2",
+                        "d_1": "Density of gas 1",
+                        "d_2": "Density of gas 2",
+                        "M_1": "Molecular mass (or molar mass) of gas 1",
+                        "M_2": "Molecular mass (or molar mass) of gas 2"
+                    },
+                    "siunit": "Dimensionless ratio"
+                },
+                {
+                    "name": "Relationship Between Rate of Diffusion and Time",
+                    "expression": "r \\propto \\frac{1}{t}",
+                    "Variables": {
+                        "r": "Rate of diffusion of a gas",
+                        "t": "Time taken to move a certain distance"
+                    },
+                    "siunit": "mol/s"
+                },
+                {
+                    "name": "Graham's Law of Diffusion in Terms of Time",
+                    "expression": "\\frac{r_1}{r_2} = \\frac{t_2}{t_1} = \\sqrt{\\frac{M_2}{M_1}}",
+                    "Variables": {
+                        "r_1": "Rate of diffusion of gas 1",
+                        "r_2": "Rate of diffusion of gas 2",
+                        "t_1": "Time taken for gas 1 to diffuse",
+                        "t_2": "Time taken for gas 2 to diffuse",
+                        "M_1": "Molecular mass of gas 1",
+                        "M_2": "Molecular mass of gas 2"
+                    },
+                    "siunit": "Dimensionless ratio",
+                    "specialcases": [
+                        "Under the same conditions of temperature and pressure"
+                    ]
                 }
             ]
         },

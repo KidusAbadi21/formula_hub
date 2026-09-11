@@ -12,7 +12,10 @@ class Loadjson {
     return formulas.map(
       (formula) => Formula(
         name: formula['name'],
-        expression: formula['expression']
+        expression: formula['expression'],
+        variables: Map<String, String>.from(formula['Variables']),
+        specialCases: List<String>.from(formula['specialcases'] ?? []),
+        siUnit: formula['siunit'] ?? '',
       )
     ).toList();
   }
