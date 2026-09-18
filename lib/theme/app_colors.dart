@@ -6,6 +6,8 @@ class AppColors {
   static const primaryButotns = Color(0xFF1976D2);
   static const accent = Color(0xFF00ACC1);
   static const card = Colors.white;
+  static const expandableCard = Color(0xFFEAF3FF);
+  static const expandableCardExpanded = Color(0xFFF5F9FF);
   static const textForInsidePrimaryColoLikeAppBarr = Colors.white;
   static const textForInsideofInsidePrimaryColoLikeAppBarr = Colors.white70;
   static const text = Color(0xFF212121);

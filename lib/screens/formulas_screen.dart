@@ -70,6 +70,8 @@ class FormulaScreen extends StatelessWidget{
                 return FormulaCard(
                   formula: formulas[index],
                   sequence: index + 1,
+                  subject: subjectName,
+                  chapterNumber: chapterNumber,
                   onTap: () {
                     Navigator.push(
                       context, 
