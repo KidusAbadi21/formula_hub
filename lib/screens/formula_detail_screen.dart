@@ -4,7 +4,7 @@ import '../models/formula.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import '../services/mixed_text_refiner.dart';
 
-class FormulaDetailScreen extends StatelessWidget{
+class FormulaDetailScreen extends StatelessWidget {
 
   final Formula formula;
 
@@ -13,9 +13,11 @@ class FormulaDetailScreen extends StatelessWidget{
     required this.formula,
 
   });
- 
- @override
-  Widget build(BuildContext context){
+
+  @override
+  Widget build(BuildContext context) {
+    final formula = this.formula;
+
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: AppBar(
@@ -29,16 +31,36 @@ class FormulaDetailScreen extends StatelessWidget{
               horizontal: 24,
               vertical: 20,
             ),
-            padding: const EdgeInsets.fromLTRB(20, 60, 20, 60),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 20,
+              vertical: 60,
+            ),
             decoration: BoxDecoration(
               color: AppColors.formulaDetail,
               borderRadius: BorderRadius.circular(20),
             ),
-            child: Center(
-              child: Math.tex(
-                formula.expression,
-                textStyle: const TextStyle(fontSize: 30),
-              ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                LayoutBuilder(
+                  builder: (context, constraints) => InteractiveViewer(
+                    minScale: 0.5,
+                    maxScale: 4,
+                    boundaryMargin: const EdgeInsets.all(20),
+                    child: SizedBox(
+                      width: constraints.maxWidth,
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.center,
+                        child: Math.tex(
+                          formula.expression,
+                          textStyle: const TextStyle(fontSize: 30),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           SizedBox(height: 30),
@@ -74,11 +96,13 @@ class FormulaDetailScreen extends StatelessWidget{
                         // ),
                       ),
                       SizedBox(width: 25),
-                      MixedText(
-                        text: entry.value,
-                        //style: TextStyle(
-                          // fontSize: 16,
-                        // ),
+                      Expanded(
+                        child: MixedText(
+                          text: entry.value,
+                          //style: TextStyle(
+                            // fontSize: 16,
+                          // ),
+                        ),
                       ),
                     ],
                   ),
@@ -89,7 +113,7 @@ class FormulaDetailScreen extends StatelessWidget{
           SizedBox(height: 20),
          if (formula.specialCases.isNotEmpty) ...[
             Container(
-              margin: const EdgeInsets.only(left: 20),
+              margin: const EdgeInsets.fromLTRB(20, 0, 0, 0),
               child: Text(
                 'Special Cases:',
                 style: TextStyle(
@@ -99,7 +123,7 @@ class FormulaDetailScreen extends StatelessWidget{
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(left: 20),
+              margin: const EdgeInsets.fromLTRB(20, 0, 0, 10),
               child: MixedText(
                 text: formula.specialCases.join(', '),
               ),
@@ -108,24 +132,16 @@ class FormulaDetailScreen extends StatelessWidget{
           Row(
             children: [
               Container(
-                  margin: const EdgeInsets.only(left: 20),
-                  child: Text(
-                    'Si unit: ',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                margin: const EdgeInsets.fromLTRB(20, 0, 0, 35),
+                child: Text(
+                  'Si unit: ',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-                Container(
-                  // margin: const EdgeInsets.only(left: 20),
-                  child: Text(
-                    formula.siUnit,
-                    style: TextStyle(
-                      fontSize: 19,
-                    ),
-                  ),
-                ),
+              ),
+              Container(
+                margin: const EdgeInsets.fromLTRB(0, 0, 0, 35),
+                child: Text(formula.siUnit, style: TextStyle(fontSize: 19)),
+              ),
             ],
           ),
         ],

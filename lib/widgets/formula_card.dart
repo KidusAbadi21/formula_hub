@@ -158,11 +158,17 @@ class _FormulaCardState extends State<FormulaCard> {
                         height: 2,
                       ),
 
-                      Math.tex(
-                        widget.formula.expression,
-
-                        textStyle: TextStyle(
-                          color: AppColors.subtitle,
+                      SizedBox(
+                        width: double.infinity,
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          alignment: Alignment.centerLeft,
+                          child: Math.tex(
+                            widget.formula.expression,
+                            textStyle: TextStyle(
+                              color: AppColors.subtitle,
+                            ),
+                          ),
                         ),
                       ),
                     ],
